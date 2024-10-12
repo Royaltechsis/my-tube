@@ -5,6 +5,10 @@ import Avatar from '@mui/material/Avatar';
 import { formatDistanceToNow } from 'date-fns';
 
 function VideoCard({ video }) {
+  // Convert uploadDate to a Date object and check if it's valid
+  const uploadDate = new Date(video.uploadDate);
+  const isValidDate = !isNaN(uploadDate.getTime()); // Check if the date is valid
+
   return (
     <Link to={`/video/${video.id}`} className="block w-full sm:w-80 m-2">
       <div className="video-card flex flex-col">
@@ -31,7 +35,9 @@ function VideoCard({ video }) {
             <h3 className="text-sm font-semibold text-white line-clamp-2">{video.title}</h3>
             <p className="text-xs text-gray-400 mt-1">{video.channelName}</p>
             <p className="text-xs text-gray-400">
-              {`${video.viewCount} views • ${formatDistanceToNow(new Date(video.uploadDate))} ago`}
+              {isValidDate 
+                ? `${video.viewCount} views • ${formatDistanceToNow(uploadDate)} ago`
+                : `${video.viewCount} views • Unknown upload time`}
             </p>
           </div>
         </div>

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Update import here
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
@@ -27,7 +28,9 @@ function Header() {
             <MenuIcon className="cursor-pointer text-white" />
           </button>
           <div className="text-2xl font-bold hidden md:block">
+            <Link to='/'>
             <span className="text-red-500">MyTube</span>
+            </Link>
           </div>
         </div>
 
