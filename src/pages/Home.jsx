@@ -2,12 +2,11 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
-import VideoPlayer from '../components/VideoPlayer';
 import RandomVideoList from '../components/VideoList';
 
 function Home() {
   return (
-    <div className="w-full h-screen bg-gray-800 flex flex-col">
+    <div className="w-full h-auto bg-gray-800 flex flex-col">
       {/* Header */}
       <Header />
 
@@ -17,10 +16,7 @@ function Home() {
 
         {/* Main Content */}
         <div className="flex-1 p-4 overflow-y-auto">
-          {/* Video Player */}
-          {/* <VideoPlayer videoUrl={'https://www.youtube.com/embed/example'} isLoading={false} /> */}
-
-          {/* Video Cards or Main Content Area */}
+          {/* Video Cards List */}
           <RandomVideoList />
         </div>
       </div>
