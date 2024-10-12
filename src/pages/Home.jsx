@@ -18,7 +18,7 @@ function Home() {
         {/* Main Content */}
         <div className="flex-1 p-4 overflow-y-auto">
           {/* Video Player */}
-          <VideoPlayer videoUrl={'https://www.youtube.com/embed/example'} isLoading={false} />
+          {/* <VideoPlayer videoUrl={'https://www.youtube.com/embed/example'} isLoading={false} /> */}
 
           {/* Video Cards or Main Content Area */}
           <RandomVideoList />
