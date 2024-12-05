@@ -12,7 +12,7 @@ function Home() {
 
       <div className="flex flex-1">
         {/* Sidebar */}
-        <Sidebar className="w-1/4 md:w-1/5 lg:w-1/6 bg-gray-900 hidden sm:flex" />
+        {/* <Sidebar className="w-1/4 md:w-1/5 lg:w-1/6 bg-gray-900 hidden sm:flex" /> */}
 
         {/* Main Content */}
         <div className="flex-1 p-4 overflow-y-auto">

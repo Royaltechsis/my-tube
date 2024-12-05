@@ -24,10 +24,10 @@ function Header() {
       <div className="flex justify-between items-center p-3 bg-gray-800 text-white w-full">
         {/* Left Section */}
         <div className="flex items-center gap-3">
-          <button>
+          {/* <button>
             <MenuIcon className="cursor-pointer text-white" />
-          </button>
-          <div className="text-2xl font-bold hidden md:block">
+          </button> */}
+          <div className="text-2xl font-bold  md:block">
             <Link to='/'>
             <span className="text-red-500">MyTube</span>
             </Link>
@@ -47,15 +47,15 @@ function Header() {
             />
             <SearchIcon className="cursor-pointer" onClick={handleSearch} />
           </div>
-          <MicIcon className="cursor-pointer text-white ml-2" />
+          {/* <MicIcon className="cursor-pointer text-white ml-2" /> */}
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center gap-4">
+        {/* <div className="flex items-center gap-4">
           <VideoCallIcon className="cursor-pointer text-white" />
           <NotificationsIcon className="cursor-pointer text-white" />
           <AccountCircleIcon className="cursor-pointer text-white" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
