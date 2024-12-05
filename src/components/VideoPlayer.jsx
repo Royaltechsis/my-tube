@@ -6,7 +6,7 @@ import VideoCard from './VideoCard'; // Import VideoCard to display related vide
 
 function VideoPlayer({ videoUrl, isLoading, relatedVideos = [] }) { // Default to an empty array
   return (
-    <Box className="bg-gray-900 rounded-lg shadow-lg p-4">
+    <Box className="bg-gray-900 rounded-lg shadow-lg p-4 mt-20">
       <Box className="flex flex-col items-center justify-center w-full">
         {isLoading ? (
           <CircularProgress className="text-white" />

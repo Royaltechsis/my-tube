@@ -46,7 +46,7 @@ function RandomVideoList() {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mt-10">
       <div className="video-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {videos.slice(0, visibleVideos).map((video) => (
           <VideoCard key={video.id} video={video} />

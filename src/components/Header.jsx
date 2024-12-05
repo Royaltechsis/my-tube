@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <div>
-      <div className="flex justify-between items-center p-3 bg-gray-800 text-white w-full">
+      <div className="flex justify-between items-center p-3 bg-gray-900 text-white w-full fixed mb-10 z-20">
         {/* Left Section */}
         <div className="flex items-center gap-3">
           {/* <button>
